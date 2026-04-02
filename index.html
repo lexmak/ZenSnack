@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Montserrat', sans-serif; }
-        h1, h2, h3, .logo { font-family: 'Quicksand', sans-serif; }
+        h1, h2, h3, h4, .logo { font-family: 'Quicksand', sans-serif; }
     </style>
 </head>
 <body class="bg-[#0a0a0a] text-gray-200">
@@ -23,18 +23,16 @@
         </a>
     </nav>
 
-    <section class="relative h-[60vh] flex items-center justify-center text-center px-4 overflow-hidden">
+    <section class="relative h-[50vh] flex items-center justify-center text-center px-4 overflow-hidden">
         <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/80 to-[#0a0a0a] z-10"></div>
-        
-        <div class="relative z-20 max-w-3xl animate-fade-in">
+        <div class="relative z-20 max-w-3xl">
             <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">
                 Calma tu hambre, <br><span class="text-[#2ecc71]">recarga tu día</span>
             </h1>
-            <p class="text-xl text-gray-300 mb-10 max-w-xl mx-auto leading-relaxed">
-                Snacks premium diseñados para darte el impulso que necesitas en cualquier momento.
+            <p class="text-xl text-gray-300 mb-8 max-w-xl mx-auto leading-relaxed">
+                Snacks premium diseñados para darte el impulso que necesitas.
             </p>
-            
-            <a href="#menu" class="inline-block bg-[#27ae60] text-white px-12 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-all duration-300 shadow-[0_0_20px_rgba(39,174,96,0.4)] hover:shadow-white/20">
+            <a href="#menu" class="inline-block bg-[#27ae60] text-white px-12 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-all duration-300 shadow-[0_0_20px_rgba(39,174,96,0.4)]">
                 Explorar Menú
             </a>
         </div>
@@ -42,102 +40,98 @@
 
     <section id="menu" class="max-w-6xl mx-auto px-6 pb-12">
         <div class="text-center mb-16">
-            <h2 class="text-4xl font-bold text-white mb-4">Nuestra Selección Zen</h2>
+            <h2 class="text-4xl font-bold text-white mb-4 uppercase tracking-tighter">Selección Actual</h2>
             <div class="w-20 h-1.5 bg-[#27ae60] mx-auto rounded-full"></div>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-            
-            <div class="group bg-[#151515] rounded-[2.5rem] overflow-hidden border border-gray-800 hover:border-[#27ae60] transition-all duration-500 shadow-2xl flex flex-col">
+            <div class="group bg-[#151515] rounded-[2.5rem] overflow-hidden border border-gray-800 hover:border-[#27ae60] transition-all duration-500 shadow-2xl flex flex-col text-center">
                 <div class="h-72 overflow-hidden">
                     <img src="alitas1.png" alt="Alitas Energía" class="w-full h-full object-cover opacity-90 group-hover:scale-110 transition-transform duration-700">
                 </div>
-                <div class="p-10 flex flex-col flex-grow text-center">
+                <div class="p-10 flex flex-col flex-grow">
                     <h3 class="text-2xl font-bold text-white mb-3">Alitas Energía</h3>
-                    <p class="text-gray-400 mb-6 text-base leading-relaxed">
-                        4 deliciosas alas bañadas en salsa BBQ, acompañadas de pepino fresco, naranja, manzana y papas a la francesa.
-                    </p>
-                    <div class="mt-auto">
-                        <span class="text-4xl font-bold text-[#2ecc71] block mb-2">$55.00</span>
-                    </div>
+                    <p class="text-gray-400 mb-6 text-sm leading-relaxed">4 alas BBQ + pepino, naranja, manzana y papas a la francesa.</p>
+                    <div class="mt-auto"><span class="text-4xl font-bold text-[#2ecc71]">$55.00</span></div>
                 </div>
             </div>
-
-            <div class="group bg-[#151515] rounded-[2.5rem] overflow-hidden border border-gray-800 hover:border-[#27ae60] transition-all duration-500 shadow-2xl flex flex-col">
+            <div class="group bg-[#151515] rounded-[2.5rem] overflow-hidden border border-gray-800 hover:border-[#27ae60] transition-all duration-500 shadow-2xl flex flex-col text-center">
                 <div class="h-72 overflow-hidden">
                     <img src="nuggets1.png" alt="Nuggets Balance" class="w-full h-full object-cover opacity-90 group-hover:scale-110 transition-transform duration-700">
                 </div>
-                <div class="p-10 flex flex-col flex-grow text-center">
+                <div class="p-10 flex flex-col flex-grow">
                     <h3 class="text-2xl font-bold text-white mb-3">Nuggets Balance</h3>
-                    <p class="text-gray-400 mb-6 text-base leading-relaxed">
-                        5 nuggets de pollo premium, doraditos y acompañados de nuestra porción clásica de papas fritas.
-                    </p>
-                    <div class="mt-auto">
-                        <span class="text-4xl font-bold text-[#2ecc71] block mb-2">$40.00</span>
-                    </div>
+                    <p class="text-gray-400 mb-6 text-sm leading-relaxed">5 nuggets premium doraditos con su porción de papas fritas.</p>
+                    <div class="mt-auto"><span class="text-4xl font-bold text-[#2ecc71]">$40.00</span></div>
                 </div>
             </div>
-
-            <div class="group bg-[#151515] rounded-[2.5rem] overflow-hidden border border-gray-800 hover:border-[#27ae60] transition-all duration-500 shadow-2xl flex flex-col">
+            <div class="group bg-[#151515] rounded-[2.5rem] overflow-hidden border border-gray-800 hover:border-[#27ae60] transition-all duration-500 shadow-2xl flex flex-col text-center">
                 <div class="h-72 overflow-hidden">
                     <img src="palomitas1.png" alt="Popcorn Bites" class="w-full h-full object-cover opacity-90 group-hover:scale-110 transition-transform duration-700">
                 </div>
-                <div class="p-10 flex flex-col flex-grow text-center">
+                <div class="p-10 flex flex-col flex-grow">
                     <h3 class="text-2xl font-bold text-white mb-3">Popcorn Bites</h3>
-                    <p class="text-gray-400 mb-6 text-base leading-relaxed">
-                        12 palomitas de pollo (popcorn chicken) súper crujientes servidas con una cama de papas francesas.
-                    </p>
-                    <div class="mt-auto">
-                        <span class="text-4xl font-bold text-[#2ecc71] block mb-2">$40.00</span>
-                    </div>
+                    <p class="text-gray-400 mb-6 text-sm leading-relaxed">12 piezas de pollo crujiente servidas sobre una cama de papas.</p>
+                    <div class="mt-auto"><span class="text-4xl font-bold text-[#2ecc71]">$40.00</span></div>
                 </div>
             </div>
-
-            <div class="group bg-[#151515] rounded-[2.5rem] overflow-hidden border border-gray-800 hover:border-[#27ae60] transition-all duration-500 shadow-2xl flex flex-col">
+            <div class="group bg-[#151515] rounded-[2.5rem] overflow-hidden border border-gray-800 hover:border-[#27ae60] transition-all duration-500 shadow-2xl flex flex-col text-center">
                 <div class="h-72 overflow-hidden">
                     <img src="papas1.png" alt="Papas Naturales" class="w-full h-full object-cover opacity-90 group-hover:scale-110 transition-transform duration-700">
                 </div>
-                <div class="p-10 flex flex-col flex-grow text-center">
+                <div class="p-10 flex flex-col flex-grow">
                     <h3 class="text-2xl font-bold text-white mb-3">Papas Naturales</h3>
-                    <p class="text-gray-400 mb-6 text-base leading-relaxed">
-                        Nuestras clásicas papas fritas naturales acompañadas con trozos de salchicha de pavo de alta calidad.
-                    </p>
-                    <div class="mt-auto">
-                        <span class="text-4xl font-bold text-[#2ecc71] block mb-2">$35.00</span>
-                    </div>
+                    <p class="text-gray-400 mb-6 text-sm leading-relaxed">Papas fritas naturales con trozos de salchicha de pavo de alta calidad.</p>
+                    <div class="mt-auto"><span class="text-4xl font-bold text-[#2ecc71]">$35.00</span></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="max-w-6xl mx-auto px-6 pb-12">
-        <div class="text-center mb-10">
-            <h3 class="text-xl font-semibold text-gray-500 uppercase tracking-[0.3em]">Muy pronto</h3>
+    <section class="max-w-6xl mx-auto px-6 pb-24">
+        <div class="text-center mb-12">
+            <h3 class="text-2xl font-bold text-[#2ecc71] uppercase tracking-[0.2em] mb-2">Próximamente</h3>
+            <p class="text-gray-500 text-sm">Nuevos integrantes a la familia ZenSnack</p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div class="border border-dashed border-gray-800 rounded-3xl p-8 flex items-center justify-center bg-white/5 group hover:bg-[#27ae60]/5 transition-colors">
-                <div class="text-center">
-                    <span class="text-4xl mb-2 block">🍕</span>
-                    <h4 class="text-xl font-bold text-gray-300">Pizzas <span class="text-orange-500 font-medium text-sm block">Little Caesars Pizza®</span></h4>
-                    <p class="text-sm text-gray-500 italic">Integradas a tus combos favoritos</p>
-                </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <div class="bg-white/5 border border-dashed border-gray-800 rounded-3xl p-6 text-center">
+                <span class="text-3xl block mb-3">🍕</span>
+                <h4 class="font-bold text-white mb-1 uppercase text-sm">Combos & Mas</h4>
+                <p class="text-xs text-gray-400 leading-relaxed">Pizzas <span class="text-orange-500">Little Caesars®</span> y Maruchan® preparadas al momento.</p>
             </div>
-            <div class="border border-dashed border-gray-800 rounded-3xl p-8 flex items-center justify-center bg-white/5 group hover:bg-[#27ae60]/5 transition-colors">
-                <div class="text-center">
-                    <span class="text-4xl mb-2 block">🥤</span>
-                    <h4 class="text-xl font-bold text-gray-300">Aguas y Refrescos</h4>
-                    <p class="text-sm text-gray-500 italic">Variedad de marcas para acompañar</p>
+
+            <div class="bg-white/5 border border-dashed border-gray-800 rounded-3xl p-6 text-center">
+                <span class="text-3xl block mb-3">🥤</span>
+                <h4 class="font-bold text-white mb-1 uppercase text-sm">Bebidas Clásicas</h4>
+                <p class="text-xs text-gray-400 leading-relaxed">Refrescos <span class="text-red-500">Coca-Cola®</span> (600ml de Vidrio) para el mejor sabor.</p>
+            </div>
+
+            <div class="bg-white/5 border border-dashed border-gray-800 rounded-3xl p-6 text-center">
+                <span class="text-3xl block mb-3">🍰</span>
+                <h4 class="font-bold text-white mb-1 uppercase text-sm">Postres por Encargo</h4>
+                <p class="text-xs text-gray-400 leading-relaxed">Pay de Limón, Oreo y Gelatina de Mosaico (Solo bajo pedido).</p>
+            </div>
+
+            <div class="md:col-span-3 bg-gradient-to-r from-[#27ae60]/10 to-transparent border border-dashed border-[#27ae60]/30 rounded-3xl p-8 flex flex-col md:flex-row items-center justify-between">
+                <div class="text-center md:text-left mb-4 md:mb-0">
+                    <span class="bg-[#2ecc71] text-black text-[10px] font-bold px-2 py-1 rounded mb-2 inline-block">EDICIÓN ESPECIAL</span>
+                    <h4 class="text-2xl font-bold text-white">Asian & Korean Snacks</h4>
+                    <p class="text-gray-400 text-sm">Buldak Ramen, Snacks Fustua y dulces asiáticos importados.</p>
+                </div>
+                <div class="flex gap-4 text-3xl opacity-60">
+                    <span>🍜</span><span>🍢</span><span>🍬</span>
                 </div>
             </div>
         </div>
     </section>
 
     <footer class="bg-black py-12 text-center border-t border-gray-900 px-6">
-        <div class="max-w-4xl mx-auto">
-            <p class="text-gray-500 text-sm tracking-widest uppercase mb-4">ZenSnack © 2026</p>
-            
-            <p class="text-[10px] text-gray-700 leading-relaxed uppercase tracking-wider">
-                Aviso Legal: Las marcas registradas, logotipos y nombres comerciales como Little Caesars Pizza®, Coca-Cola®, Pepsi® y otros mencionados en este sitio son propiedad de sus respectivos dueños. ZenSnack utiliza estos productos únicamente para la elaboración e integración de sus combos y no pretende ostentar la propiedad ni representación oficial de dichas marcas.
+        <div class="max-w-4xl mx-auto text-[10px] text-gray-700 tracking-wider uppercase leading-relaxed">
+            <p class="mb-4 text-gray-500 text-sm tracking-widest">ZenSnack © 2026</p>
+            <p>
+                Aviso Legal: Las marcas registradas Little Caesars Pizza®, Maruchan®, Coca-Cola®, Buldak®, Fustua®, Oreo® y similares son propiedad de sus respectivos dueños. ZenSnack utiliza estos productos exclusivamente para la integración de sus servicios de alimentos y no representa de manera oficial a dichas compañías. Postres disponibles exclusivamente bajo pedido anticipado.
             </p>
         </div>
     </footer>
