@@ -23,78 +23,87 @@
         </a>
     </nav>
 
-    <section class="relative h-[40vh] flex items-center justify-center text-center px-4">
-        <div class="absolute inset-0 bg-gradient-to-b from-black/60 to-[#0a0a0a] z-10"></div>
-        <div class="relative z-20 max-w-2xl">
-            <h1 class="text-4xl md:text-5xl font-bold text-white mb-2">Energía que se disfruta</h1>
-            <p class="text-lg text-gray-400">Combos diseñados para calmar tu hambre y seguir con todo.</p>
+    <section class="relative h-[60vh] flex items-center justify-center text-center px-4 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/80 to-[#0a0a0a] z-10"></div>
+        
+        <div class="relative z-20 max-w-3xl animate-fade-in">
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">
+                Calma tu hambre, <br><span class="text-[#2ecc71]">recarga tu día</span>
+            </h1>
+            <p class="text-xl text-gray-300 mb-10 max-w-xl mx-auto leading-relaxed">
+                Snacks premium diseñados para darte el impulso que necesitas en cualquier momento.
+            </p>
+            
+            <a href="#menu" class="inline-block bg-[#27ae60] text-white px-12 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-all duration-300 shadow-[0_0_20px_rgba(39,174,96,0.4)] hover:shadow-white/20">
+                Explorar Menú
+            </a>
         </div>
     </section>
 
-    <section id="menu" class="max-w-6xl mx-auto px-6 pb-20">
-        <div class="text-center mb-12">
-            <h2 class="text-3xl font-bold text-white mb-2 text-white">Nuestro Menú</h2>
-            <div class="w-12 h-1 bg-[#27ae60] mx-auto rounded-full"></div>
+    <section id="menu" class="max-w-6xl mx-auto px-6 pb-24">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-white mb-4">Nuestra Selección Zen</h2>
+            <div class="w-20 h-1.5 bg-[#27ae60] mx-auto rounded-full"></div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
             
-            <div class="group bg-[#151515] rounded-[2rem] overflow-hidden border border-gray-800 hover:border-[#27ae60] transition-all duration-500 shadow-xl flex flex-col">
-                <div class="h-64 overflow-hidden">
-                    <img src="alitas.png" alt="Alitas Energía" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500">
+            <div class="group bg-[#151515] rounded-[2.5rem] overflow-hidden border border-gray-800 hover:border-[#27ae60] transition-all duration-500 shadow-2xl flex flex-col">
+                <div class="h-72 overflow-hidden">
+                    <img src="alitas.png" alt="Alitas Energía" class="w-full h-full object-cover opacity-90 group-hover:scale-110 transition-transform duration-700">
                 </div>
-                <div class="p-8 flex flex-col flex-grow text-center">
-                    <h3 class="text-2xl font-bold text-white mb-2">Alitas Energía</h3>
-                    <p class="text-gray-400 mb-4 text-sm leading-relaxed">
+                <div class="p-10 flex flex-col flex-grow text-center">
+                    <h3 class="text-2xl font-bold text-white mb-3">Alitas Energía</h3>
+                    <p class="text-gray-400 mb-6 text-base leading-relaxed">
                         4 deliciosas alas bañadas en salsa BBQ, acompañadas de pepino fresco, naranja, manzana y papas a la francesa.
                     </p>
                     <div class="mt-auto">
-                        <span class="text-3xl font-bold text-[#2ecc71]">$50.00</span>
+                        <span class="text-4xl font-bold text-[#2ecc71] block mb-2">$45.00</span>
                     </div>
                 </div>
             </div>
 
-            <div class="group bg-[#151515] rounded-[2rem] overflow-hidden border border-gray-800 hover:border-[#27ae60] transition-all duration-500 shadow-xl flex flex-col">
-                <div class="h-64 overflow-hidden">
-                    <img src="nuggets2.png" alt="Nuggets Balance" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500">
+            <div class="group bg-[#151515] rounded-[2.5rem] overflow-hidden border border-gray-800 hover:border-[#27ae60] transition-all duration-500 shadow-2xl flex flex-col">
+                <div class="h-72 overflow-hidden">
+                    <img src="nuggets2.png" alt="Nuggets Balance" class="w-full h-full object-cover opacity-90 group-hover:scale-110 transition-transform duration-700">
                 </div>
-                <div class="p-8 flex flex-col flex-grow text-center">
-                    <h3 class="text-2xl font-bold text-white mb-2">Nuggets Balance</h3>
-                    <p class="text-gray-400 mb-4 text-sm leading-relaxed">
+                <div class="p-10 flex flex-col flex-grow text-center">
+                    <h3 class="text-2xl font-bold text-white mb-3">Nuggets Balance</h3>
+                    <p class="text-gray-400 mb-6 text-base leading-relaxed">
                         5 nuggets de pollo premium, doraditos y acompañados de nuestra porción clásica de papas fritas.
                     </p>
                     <div class="mt-auto">
-                        <span class="text-3xl font-bold text-[#2ecc71]">$40.00</span>
+                        <span class="text-4xl font-bold text-[#2ecc71] block mb-2">$40.00</span>
                     </div>
                 </div>
             </div>
 
-            <div class="group bg-[#151515] rounded-[2rem] overflow-hidden border border-gray-800 hover:border-[#27ae60] transition-all duration-500 shadow-xl flex flex-col">
-                <div class="h-64 overflow-hidden">
-                    <img src="palomitas.png" alt="Popcorn Bites" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500">
+            <div class="group bg-[#151515] rounded-[2.5rem] overflow-hidden border border-gray-800 hover:border-[#27ae60] transition-all duration-500 shadow-2xl flex flex-col">
+                <div class="h-72 overflow-hidden">
+                    <img src="palomitas.png" alt="Popcorn Bites" class="w-full h-full object-cover opacity-90 group-hover:scale-110 transition-transform duration-700">
                 </div>
-                <div class="p-8 flex flex-col flex-grow text-center">
-                    <h3 class="text-2xl font-bold text-white mb-2">Popcorn Bites</h3>
-                    <p class="text-gray-400 mb-4 text-sm leading-relaxed">
+                <div class="p-10 flex flex-col flex-grow text-center">
+                    <h3 class="text-2xl font-bold text-white mb-3">Popcorn Bites</h3>
+                    <p class="text-gray-400 mb-6 text-base leading-relaxed">
                         12 palomitas de pollo (popcorn chicken) súper crujientes servidas con una cama de papas francesas.
                     </p>
                     <div class="mt-auto">
-                        <span class="text-3xl font-bold text-[#2ecc71]">$40.00</span>
+                        <span class="text-4xl font-bold text-[#2ecc71] block mb-2">$40.00</span>
                     </div>
                 </div>
             </div>
 
-            <div class="group bg-[#151515] rounded-[2rem] overflow-hidden border border-gray-800 hover:border-[#27ae60] transition-all duration-500 shadow-xl flex flex-col">
-                <div class="h-64 overflow-hidden">
-                    <img src="papas.png" alt="Papas Naturales" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500">
+            <div class="group bg-[#151515] rounded-[2.5rem] overflow-hidden border border-gray-800 hover:border-[#27ae60] transition-all duration-500 shadow-2xl flex flex-col">
+                <div class="h-72 overflow-hidden">
+                    <img src="papas.png" alt="Papas Naturales" class="w-full h-full object-cover opacity-90 group-hover:scale-110 transition-transform duration-700">
                 </div>
-                <div class="p-8 flex flex-col flex-grow text-center">
-                    <h3 class="text-2xl font-bold text-white mb-2">Papas Naturales</h3>
-                    <p class="text-gray-400 mb-4 text-sm leading-relaxed">
+                <div class="p-10 flex flex-col flex-grow text-center">
+                    <h3 class="text-2xl font-bold text-white mb-3">Papas Naturales</h3>
+                    <p class="text-gray-400 mb-6 text-base leading-relaxed">
                         Nuestras clásicas papas fritas naturales acompañadas con trozos de salchicha de pavo de alta calidad.
                     </p>
                     <div class="mt-auto">
-                        <span class="text-3xl font-bold text-[#2ecc71]">$35.00</span>
+                        <span class="text-4xl font-bold text-[#2ecc71] block mb-2">$35.00</span>
                     </div>
                 </div>
             </div>
@@ -102,8 +111,8 @@
         </div>
     </section>
 
-    <footer class="bg-black py-10 text-center border-t border-gray-900">
-        <p class="text-gray-600 text-xs">ZenSnack © 2026 - Alimenta tu bienestar</p>
+    <footer class="bg-black py-16 text-center border-t border-gray-900">
+        <p class="text-gray-600 text-sm tracking-widest uppercase">ZenSnack © 2026 - Alimenta tu bienestar</p>
     </footer>
 
 </body>
