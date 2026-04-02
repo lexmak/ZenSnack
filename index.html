@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZenSnack | Energía y Sabor</title>
+    <title>ZenSnack | Menú de Energía</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
@@ -23,74 +23,87 @@
         </a>
     </nav>
 
-    <section class="relative h-[50vh] flex items-center justify-center text-center px-4 overflow-hidden">
-        <div class="absolute inset-0 bg-gradient-to-b from-black/70 to-[#0a0a0a] z-10"></div>
+    <section class="relative h-[40vh] flex items-center justify-center text-center px-4">
+        <div class="absolute inset-0 bg-gradient-to-b from-black/60 to-[#0a0a0a] z-10"></div>
         <div class="relative z-20 max-w-2xl">
-            <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">Calma tu hambre, recarga tu día</h1>
-            <p class="text-lg text-gray-400 mb-8">Snacks premium diseñados para darte el impulso que necesitas.</p>
-            <a href="#menu" class="bg-[#27ae60] text-white px-10 py-4 rounded-full font-bold uppercase tracking-wider hover:bg-white hover:text-black transition-colors">
-                Explorar Menú
-            </a>
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-2">Energía que se disfruta</h1>
+            <p class="text-lg text-gray-400">Combos diseñados para calmar tu hambre y seguir con todo.</p>
         </div>
     </section>
 
-    <section id="menu" class="max-w-5xl mx-auto px-6 py-20">
-        <div class="text-center mb-16">
-            <h2 class="text-4xl font-bold text-white mb-2">Nuestra Selección Zen</h2>
-            <div class="w-16 h-1 bg-[#27ae60] mx-auto rounded-full"></div>
+    <section id="menu" class="max-w-6xl mx-auto px-6 pb-20">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-white mb-2 text-white">Nuestro Menú</h2>
+            <div class="w-12 h-1 bg-[#27ae60] mx-auto rounded-full"></div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             
-            <div class="group bg-[#151515] rounded-[2rem] overflow-hidden border border-gray-800 hover:border-[#27ae60] transition-all duration-500 hover:-translate-y-2 shadow-xl">
-                <div class="h-80 overflow-hidden">
-                    <img src="nuggets2.png" alt="Nuggets" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity">
+            <div class="group bg-[#151515] rounded-[2rem] overflow-hidden border border-gray-800 hover:border-[#27ae60] transition-all duration-500 shadow-xl flex flex-col">
+                <div class="h-64 overflow-hidden">
+                    <img src="alitas.png" alt="Alitas Energía" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500">
                 </div>
-                <div class="p-8 text-center">
-                    <h3 class="text-2xl font-bold text-white mb-3">Nuggets Balance</h3>
-                    <p class="text-gray-400 mb-6 leading-relaxed">Pechuga seleccionada con un empanizado ligero y crujiente.</p>
-                    <span class="text-3xl font-bold text-[#2ecc71]">$75.00</span>
-                </div>
-            </div>
-
-            <div class="group bg-[#151515] rounded-[2rem] overflow-hidden border border-gray-800 hover:border-[#27ae60] transition-all duration-500 hover:-translate-y-2 shadow-xl">
-                <div class="h-80 overflow-hidden">
-                    <img src="alitas.png" alt="Alitas" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity">
-                </div>
-                <div class="p-8 text-center">
-                    <h3 class="text-2xl font-bold text-white mb-3">Alitas Energía</h3>
-                    <p class="text-gray-400 mb-6 leading-relaxed">Proteína pura con salsas equilibradas preparadas al momento.</p>
-                    <span class="text-3xl font-bold text-[#2ecc71]">$115.00</span>
+                <div class="p-8 flex flex-col flex-grow text-center">
+                    <h3 class="text-2xl font-bold text-white mb-2">Alitas Energía</h3>
+                    <p class="text-gray-400 mb-4 text-sm leading-relaxed">
+                        4 deliciosas alas bañadas en salsa BBQ, acompañadas de pepino fresco, naranja, manzana y papas a la francesa.
+                    </p>
+                    <div class="mt-auto">
+                        <span class="text-3xl font-bold text-[#2ecc71]">$45.00</span>
+                    </div>
                 </div>
             </div>
 
-            <div class="group bg-[#151515] rounded-[2rem] overflow-hidden border border-gray-800 hover:border-[#27ae60] transition-all duration-500 hover:-translate-y-2 shadow-xl">
-                <div class="h-80 overflow-hidden">
-                    <img src="palomitas.png" alt="Popcorn" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity">
+            <div class="group bg-[#151515] rounded-[2rem] overflow-hidden border border-gray-800 hover:border-[#27ae60] transition-all duration-500 shadow-xl flex flex-col">
+                <div class="h-64 overflow-hidden">
+                    <img src="nuggets.png" alt="Nuggets Balance" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500">
                 </div>
-                <div class="p-8 text-center">
-                    <h3 class="text-2xl font-bold text-white mb-3">Popcorn Bites</h3>
-                    <p class="text-gray-400 mb-6 leading-relaxed">Bocados rápidos de pura pechuga para seguir con tu jornada.</p>
-                    <span class="text-3xl font-bold text-[#2ecc71]">$85.00</span>
+                <div class="p-8 flex flex-col flex-grow text-center">
+                    <h3 class="text-2xl font-bold text-white mb-2">Nuggets Balance</h3>
+                    <p class="text-gray-400 mb-4 text-sm leading-relaxed">
+                        5 nuggets de pollo premium, doraditos y acompañados de nuestra porción clásica de papas fritas.
+                    </p>
+                    <div class="mt-auto">
+                        <span class="text-3xl font-bold text-[#2ecc71]">$40.00</span>
+                    </div>
                 </div>
             </div>
 
-            <div class="group bg-[#151515] rounded-[2rem] overflow-hidden border border-gray-800 hover:border-[#27ae60] transition-all duration-500 hover:-translate-y-2 shadow-xl">
-                <div class="h-80 overflow-hidden">
-                    <img src="papas.png" alt="Papas" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity">
+            <div class="group bg-[#151515] rounded-[2rem] overflow-hidden border border-gray-800 hover:border-[#27ae60] transition-all duration-500 shadow-xl flex flex-col">
+                <div class="h-64 overflow-hidden">
+                    <img src="palomitas.png" alt="Popcorn Bites" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500">
                 </div>
-                <div class="p-8 text-center">
-                    <h3 class="text-2xl font-bold text-white mb-3">Papas Naturales</h3>
-                    <p class="text-gray-400 mb-6 leading-relaxed">Corte artesanal horneadas con el toque justo de sal marina.</p>
-                    <span class="text-3xl font-bold text-[#2ecc71]">$55.00</span>
+                <div class="p-8 flex flex-col flex-grow text-center">
+                    <h3 class="text-2xl font-bold text-white mb-2">Popcorn Bites</h3>
+                    <p class="text-gray-400 mb-4 text-sm leading-relaxed">
+                        12 palomitas de pollo (popcorn chicken) súper crujientes servidas con una cama de papas francesas.
+                    </p>
+                    <div class="mt-auto">
+                        <span class="text-3xl font-bold text-[#2ecc71]">$40.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group bg-[#151515] rounded-[2rem] overflow-hidden border border-gray-800 hover:border-[#27ae60] transition-all duration-500 shadow-xl flex flex-col">
+                <div class="h-64 overflow-hidden">
+                    <img src="papas.png" alt="Papas Naturales" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="p-8 flex flex-col flex-grow text-center">
+                    <h3 class="text-2xl font-bold text-white mb-2">Papas Naturales</h3>
+                    <p class="text-gray-400 mb-4 text-sm leading-relaxed">
+                        Nuestras clásicas papas fritas naturales acompañadas con trozos de salchicha de pavo de alta calidad.
+                    </p>
+                    <div class="mt-auto">
+                        <span class="text-3xl font-bold text-[#2ecc71]">$35.00</span>
+                    </div>
                 </div>
             </div>
 
         </div>
     </section>
 
-    <footer class="bg-black py-12 text-center border-t border-gray-900">
-        <p class="text-gray-600 text-sm">ZenSnack © 2026 - Alimenta tu bienestar</p>
+    <footer class="bg-black py-10 text-center border-t border-gray-900">
+        <p class="text-gray-600 text-xs">ZenSnack © 2026 - Alimenta tu bienestar</p>
     </footer>
 
 </body>
