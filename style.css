@@ -7,8 +7,8 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #0a0a0a; /* Negro profundo */
-    color: #e0e0e0; /* Gris claro para lectura suave */
+    background-color: #0a0a0a;
+    color: #e0e0e0;
     scroll-behavior: smooth;
     line-height: 1.6;
 }
@@ -19,7 +19,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 8%;
-    background: rgba(15, 15, 15, 0.98); 
+    background: rgba(15, 15, 15, 0.98);
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 20px rgba(0,0,0,0.5);
     position: sticky;
@@ -32,12 +32,12 @@ body {
     font-family: 'Quicksand', sans-serif;
     font-size: 1.8rem;
     font-weight: 700;
-    color: #2ecc71; /* Verde esmeralda brillante */
+    color: #2ecc71;
     letter-spacing: -1px;
 }
 
 .logo span {
-    color: #ffffff; 
+    color: #ffffff;
 }
 
 .btn-whatsapp {
@@ -51,14 +51,9 @@ body {
     transition: all 0.3s ease;
 }
 
-.btn-whatsapp:hover {
-    background: #2ecc71;
-    box-shadow: 0 0 15px rgba(46, 204, 113, 0.4);
-}
-
 /* --- HERO SECTION --- */
 .hero {
-    height: 60vh;
+    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -68,44 +63,18 @@ body {
     background-color: #111;
     background-size: cover;
     background-position: center;
-    padding: 0 20px;
 }
 
 .hero-content h1 {
     font-family: 'Quicksand', sans-serif;
     font-size: 3.5rem;
     margin-bottom: 1rem;
-    color: #ffffff;
 }
 
-.hero-content p {
-    font-size: 1.2rem;
-    max-width: 600px;
-    margin: 0 auto;
-    color: #bbb;
-}
-
-.btn-main {
-    display: inline-block;
-    margin-top: 2rem;
-    padding: 14px 40px;
-    background: #27ae60;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 50px;
-    transition: 0.3s;
-}
-
-.btn-main:hover {
-    background: #ffffff;
-    color: #111;
-}
-
-/* --- CONTENEDOR Y TÍTULO --- */
+/* --- CONTENEDOR PRINCIPAL --- */
 .container {
-    padding: 80px 8%;
-    max-width: 1200px; /* Evita que las cards se estiren demasiado en pantallas gigantes */
+    padding: 60px 10%;
+    max-width: 1100px; /* Limitamos el ancho para que las 2 columnas se vean grandes */
     margin: 0 auto;
 }
 
@@ -117,99 +86,86 @@ body {
     color: #ffffff;
 }
 
-.section-title::after {
-    content: '';
-    display: block;
-    width: 50px;
-    height: 4px;
-    background: #27ae60;
-    margin: 15px auto 0;
-    border-radius: 2px;
-}
-
-/* --- GRID DE MENÚ (AJUSTADO A 2 POR FILA) --- */
+/* --- GRID DE MENÚ: FORZADO A 2 COLUMNAS --- */
 .menu-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Exactamente 2 columnas */
-    gap: 35px;
+    /* Aquí forzamos 2 columnas de igual ancho siempre */
+    grid-template-columns: 1fr 1fr; 
+    gap: 40px; /* Espacio entre tarjetas */
 }
 
 .card {
-    background: #151515; 
+    background: #151515;
     border-radius: 20px;
     overflow: hidden;
     transition: all 0.4s ease;
     border: 1px solid #252525;
+    display: flex;
+    flex-direction: column;
 }
 
 .card:hover {
     transform: translateY(-10px);
     border-color: #27ae60;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
 }
 
 .card-img img {
     width: 100%;
-    height: 300px; /* Aumentado un poco para que luzcan las 2 columnas */
+    height: 350px; /* Imagen más alta para que luzca el producto */
     object-fit: cover;
-    opacity: 0.9; 
-    transition: 0.3s;
-}
-
-.card:hover .card-img img {
-    opacity: 1;
 }
 
 .card-info {
-    padding: 25px;
+    padding: 30px;
     text-align: center;
+    flex-grow: 1;
 }
 
 .card-info h3 {
     font-family: 'Quicksand', sans-serif;
-    font-size: 1.6rem;
-    margin-bottom: 12px;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
     color: #ffffff;
 }
 
 .card-info p {
     color: #999;
-    font-size: 1rem;
-    margin-bottom: 15px;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
 }
 
 .price {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     font-weight: 700;
-    color: #2ecc71; 
+    color: #2ecc71;
     display: block;
 }
 
 /* --- FOOTER --- */
 footer {
     text-align: center;
-    padding: 60px 20px;
+    padding: 40px;
     background: #050505;
     color: #555;
-    font-size: 0.85rem;
     border-top: 1px solid #1a1a1a;
 }
 
-/* --- RESPONSIVE --- */
-@media (max-width: 900px) {
-    .container { padding: 60px 5%; }
-    .hero-content h1 { font-size: 2.8rem; }
-}
-
-@media (max-width: 768px) {
-    /* Cambio a 1 por fila en móviles */
+/* --- RESPONSIVE: DE 2 A 1 COLUMNA --- */
+@media (max-width: 850px) {
+    .container {
+        padding: 40px 5%;
+    }
+    
     .menu-grid {
+        /* En tablets o celulares, pasamos a 1 sola columna */
         grid-template-columns: 1fr;
     }
 
-    .hero-content h1 { font-size: 2.2rem; }
-    
     .card-img img {
-        height: 250px; /* Un poco más bajas en móvil para no ocupar toda la pantalla */
+        height: 300px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
     }
 }
